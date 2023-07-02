@@ -10,3 +10,9 @@ MeshCut/ProjectSettings/
 MeshCut/Logs/
 
 *.sln
+
+MeshCut/.idea/.idea.MeshCut/.idea/
+
+*.csproj
+
+MeshCut/obj/Debug/
