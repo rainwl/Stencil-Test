@@ -1,0 +1,12 @@
+
+MeshCut/Library/
+
+MeshCut/Packages/
+
+MeshCut/Temp/
+
+MeshCut/ProjectSettings/
+
+MeshCut/Logs/
+
+*.sln
