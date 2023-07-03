@@ -16,3 +16,5 @@ MeshCut/.idea/.idea.MeshCut/.idea/
 *.csproj
 
 MeshCut/obj/Debug/
+
+.idea/.idea.MeshCut.dir/.idea/
