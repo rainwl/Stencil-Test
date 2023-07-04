@@ -5,6 +5,8 @@
 
 https://github.com/rainwl/MeshCut.git
 ## Overview
+![](https://pic4rain.oss-cn-beijing.aliyuncs.com/img/IMG_2322.MP4)
+
 Given a mesh object and a plane parallel to one of the mesh's faces 
 (e.g., the YZ plane), the goal is to move the plane so that it 
 intersects with the mesh. The objective is to obtain a new display 
