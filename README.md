@@ -5,7 +5,8 @@
 
 https://github.com/rainwl/MeshCut.git
 ## Overview
-![](https://pic4rain.oss-cn-beijing.aliyuncs.com/img/IMG_2322.MP4)
+
+https://github.com/rainwl/MeshCut/issues/1#issue-1788143278
 
 Given a mesh object and a plane parallel to one of the mesh's faces 
 (e.g., the YZ plane), the goal is to move the plane so that it 
