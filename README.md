@@ -56,6 +56,11 @@ that of Huazhong University of Science and Technology.
 
 
 ## Implement
+
+Unfortunately, before implementing the algorithm based on geometry, I went ahead and implemented the shading-based algorithm. Here is a screenshot of the results, where you can perform stencil tests starting from any of the X, Y, or Z axes.
+
+![](https://pic4rain.oss-cn-beijing.aliyuncs.com/img/shading.png)
+
 I have temporarily implemented three methods based on geometry, 
 but there are some issues when dealing with concave polygons.
 
@@ -92,4 +97,29 @@ During the implementation process, you may come across other algorithms that can
 
 ## Shading algorithm
 
-Sure, let's temporarily put aside the shading approach. If we are unable to achieve the desired results through geometric methods, we can explore the shading approach later on.
+```xml
+// Sure, let's temporarily put aside the shading approach. 
+// If we are unable to achieve the desired results through geometric methods, 
+// we can explore the shading approach later on.
+```
+Unfortunately, before implementing the algorithm based on geometry, I went ahead and implemented the shading-based algorithm.
+
+
+Starting with shading is indeed a straightforward approach, requiring just a shader and a simple C# script to achieve the desired effect.
+
+```csharp
+clipByPlaneMat.SetVector("_PlanePos",clipPlane.position);
+clipByPlaneMat.SetVector("_PlaneNormal", clipPlane.up);
+```
+```shaderlab
+Properties
+{
+    _MainTex ("Texture", 2D) = "white" {}
+	_CullFaceColor("Cull Face Color", Color) = (1,1,0,1)
+	_PlanePos("Clip Plane Pos", Vector) = (1,1,1,1)
+	_PlaneNormal("Clip Plane Normal", Vector) = (1,1,1,1)
+}
+```
+
+You can run `MeshCut\MeshCut\Assets\Scenes\SampleScene.unity` this , to feel it.
+
